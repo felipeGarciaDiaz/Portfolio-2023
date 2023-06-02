@@ -11,7 +11,7 @@ this site, and I think its a great representation of who I am in the tech world.
 
 ## Tech Used
 
-This site was created using ReactJS, Material UI, NodeJS, ExpressJS and Socket.io
+This site was created using ReactJS, Material UI, NodeJS, ExpressJS and Socket.io!!!
 
 ## Todo List
 
@@ -19,4 +19,4 @@ The site is currently in development, it is a fork of my 2022 portfolio site, th
 and cleaned up a lot of the code and fixed a lot of UI and UX elements. Currently I am working on finishing the projects section, and making it look nice,
 and I also need to revamp the Contact section to make it fit better with the theme of the site.
 
-Please visit: [My Portfolio Site] (http://felipedev.us/) to view the current website as it is at this time. :) :) :)
+Please visit: [My Portfolio Site](http://felipedev.us/) to view the current website as it is at this time!!! :) :) :)
