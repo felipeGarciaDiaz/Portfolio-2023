@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@media (max-width: 600px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	#header-title {
+		padding-top: 40%;
+		font-size: 10vw;
+	}
+
+	#desc {
+		font-size: 5vw;
+	}
+
+	.layer1 {
+		background-image: url('./resources/Phone-Waves.svg');
+		padding-bottom: 100%;
+	}
+
+	.spacer {
+		aspect-ratio: 260/200;
+	}
+
+	#socials {
+		padding-top: 5%;
+	}
+	#content-title {
+		font-size: 10vw;
+	}
+	#libs-title,
+	#tools-title {
+		font-size: 12vw;
+	}
+	#content-desc,
+	#libs-desc,
+	#tools-desc {
+		font-size: 6vw;
+		padding-bottom: 5%;
+	}
+	#skills-bar {
+		padding-top: 10%;
+		height: 100%;
+	}
+	#disclaimer-info {
+		font-size: 2vw;
+	}
+	#profile-pic {
+		display: none;
+	}
+	#project-title {
+		font-size: 10vw;
+	}
+	#project-desc {
+		font-size: 4vw;
+		padding: 0%;
+	}
+	#project-image {
+		height: 5%;
+		width: 5%;
+	}
+	#tech-worked {
+		font-size: 6vw;
+	}
+	#email-form,
+	#phone-form,
+	#name-form {
+		background-color: #ececec;
+		border: none;
+		line-height: 10%;
+		padding: 0% 1%;
+		border-radius: 8px;
+	}
+}
+body {
+	overflow-x: hidden;
+}
+
+html,
+body,
+div {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fdf0e0;
+	overflow-x: hidden;
+}
+
+#header-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 5vw;
+	padding-top: 12%;
+}
+
+.spacer {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	aspect-ratio: 960/600;
+	width: 100%;
+}
+
+.layer1 {
+	background-image: url('./resources/Desktop-Waves.svg');
+}
+
+#header {
+	color: #f3f3f3;
+}
+
+#linkedin,
+#github,
+#youtube,
+#email {
+	transform: scale(1);
+	transition: 0.4s ease-in-out;
+}
+
+#linkedin:hover,
+#github:hover,
+#youtube:hover,
+#email:hover {
+	transform: scale(1.2);
+	transition: 0.4s ease-in-out;
+}
+
+#social-row {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#header-button {
+	margin-top: 3%;
+	border-radius: 50px;
+	background-color: #ffc600;
+	color: #19213d;
+	font-weight: bolder;
+	text-align: center;
+	margin: auto;
+	padding: 1% 3% 1% 3%;
+	box-sizing: content-box;
+}
+
+#header-button:hover {
+	animation: shake 1.2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+
+	10% {
+		transform: translate(-1px, -2px) rotate(-2deg);
+	}
+
+	20% {
+		transform: translate(-3px, 0px) rotate(2deg);
+	}
+
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+
+	40% {
+		transform: translate(1px, -1px) rotate(2deg);
+	}
+
+	50% {
+		transform: translate(-1px, 2px) rotate(-2deg);
+	}
+
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+}
+
+#content-box {
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	box-shadow: 5px 5px #e6e6e6;
+	border-radius: 10px;
+	margin-bottom: 5%;
+}
+
+.about-me {
+	background-color: #388ddc;
+}
+.tech-tools {
+	margin-top: 5%;
+	background-color: #386d9e;
+}
+#content-title,
+#libs-title {
+	padding-top: 2%;
+	color: #ffcc48;
+	font-weight: bolder;
+}
+
+#content-desc,
+#libs-desc,
+#tools-desc {
+	font-family: 'Roboto', sans-serif;
+	padding-left: 5%;
+	padding-bottom: 5%;
+}
+#happy-robot {
+	height: 75%;
+	width: 75%;
+	max-height: 100%;
+	max-width: 100%;
+}
+#disclaimer-info {
+	color: #ee4a4a;
+}
+#profile-pic {
+	margin-top: 20%;
+	border-radius: 50px;
+	border-style: solid;
+	border-width: 15px;
+	border-color: #fffaf4;
+}
+#tools-desc {
+	padding-right: 5%;
+}
+#libs-desc {
+	padding-bottom: 50%;
+}
+
+#profile {
+	height: 60%;
+	width: 60%;
+	border-radius: 25%;
+}
+
+#content-title-me,
+#tools-title {
+	color: #ffc600;
+	font-weight: bolder;
+}
+#tools-title {
+	padding-top: 50%;
+}
+#tools-title,
+#tools-desc {
+	text-align: right;
+}
+
+#project-description-body {
+	background-color: #2868a4;
+}
+#project-title {
+	color: #ffcc48;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+}
+#project-desc {
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	padding-left: 2%;
+	padding-bottom: 5%;
+}
+#project-showcase-body {
+	background-color: #fffaf4;
+	display: inline;
+}
+#project-img {
+	height: 50%;
+	width: 50%;
+	margin-top: 2%;
+	margin-left: 2%;
+	border-radius: 15px;
+}
+#tech-worked {
+	color: #1d1d1d;
+}
+.arrow-contact {
+	margin-top: 2%;
+	border: solid #4d4d4d;
+	border-width: 0 6px 6px 0;
+	display: inline-block;
+	padding: 60px;
+	transition: 0.25s ease-in-out;
+	margin-bottom: 2%;
+}
+#contact-form {
+	background-color: #324d9e;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-radius: 15px;
+}
+#contact-title {
+	color: #ffffff;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#email-form,
+#phone-form,
+#name-form {
+	background-color: #ececec;
+	border: none;
+	line-height: 10%;
+	padding: 1% 1%;
+	border-radius: 8px;
+}
+#name-form {
+	width: 100%;
+	margin-bottom: 1%;
+}
+#email-form,
+#phone-form {
+	width: 50%;
+}
+#email-form:focus,
+#phone-form:focus,
+#name-form,
+#message-form {
+	outline-color: #6db9ff;
+}
+#message-form {
+	background-color: #ffffff;
+	color: #202020;
+	margin-top: 2%;
+	height: auto;
+	border-radius: 15px;
+	resize: none;
+	padding-left: 2%;
+	margin-bottom: 2%;
+}
+#submit-form {
+	margin-top: 3%;
+	border-radius: 10px;
+	background-color: #ffc600;
+	color: #242424;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	margin: auto;
+	padding: 1% 3% 1% 3%;
+	box-sizing: content-box;
+	border: none;
+	margin-bottom: 5%;
+}
+#sent-title {
+	color: #ffffff;
+	font-weight: bolder0;
+	margin-top: 2%;
+}
+
+#sent-desc {
+	color: #ffffff;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#footer {
+	background-color: #2468c2;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	padding: 1% 1% 1% 1%;
+	margin-top: 7%;
+}
