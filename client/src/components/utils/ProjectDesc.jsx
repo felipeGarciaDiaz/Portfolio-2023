@@ -7,7 +7,7 @@ function ProjectDesc(props) {
 				<Bounce left>
 					<div
 						id="project-showcase-body"
-						className="col s6 m6 l6 xl6"
+						className="col s12 m6 l6 xl6"
 					>
 						<div id="test2" className="col s12 m12 l12 xl12">
 							<p className="center-align">
@@ -22,6 +22,7 @@ function ProjectDesc(props) {
 						<div id="test2" className="col s12 m12 l12 xl12">
 							<h3 id="tech-worked" className="center-align">
 								<b id="stack-intro">Tech used: </b>
+								<br />
 								{props.stack}
 							</h3>{' '}
 						</div>
@@ -31,10 +32,24 @@ function ProjectDesc(props) {
 					<div className="col s1 m1 l1 xl1"></div>
 					<div
 						id="project-description-body"
-						className="col s5 m5 l5 xl5"
+						className="col s12 m5 l5 xl5"
 					>
 						<h1 id="project-title">{props.title}</h1>
 						<h4 id="project-desc">{props.desc}</h4>
+						<a
+							className="btn"
+							href={props.git}
+							id="project-link-github"
+						>
+							Github
+						</a>{' '}
+						<a
+							className="btn"
+							href={props.link}
+							id="project-link-main"
+						>
+							Project
+						</a>
 					</div>
 				</Bounce>
 			</div>

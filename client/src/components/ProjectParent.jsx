@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Bounce from 'react-reveal/Bounce';
 import ProjectsDesc from './utils/ProjectDesc.jsx';
 import webTixPic from './media/resources/WEBTIXHELPDESKAPP.png';
@@ -10,12 +10,14 @@ import regexFormsPic from './media/resources/REGEXFORMSAPP.png';
 import dubleTrublePic from './media/resources/DUBLETRUBLEAPP.png';
 
 function ProjectsBody(props) {
+	const [projectRange, setProjectRange] = useState(1);
+	const [isDisabled, setDisabled] = useState(false);
 	const projectsList = [
 		{
 			id: 1,
 			title: 'WebTix',
 			imgSource: webTixPic,
-			git: 'https://github.com/felipeGarciaDiaz/nukeChat',
+			git: 'https://github.com/felipeGarciaDiaz/webTix',
 			link: 'http://felipedev.us:68/',
 			desc: 'WebTix is an AI assisted, community driven helpdesk software intended to revolutionize how helpdesk software operates, with features that focus directly on enterprise use, IT departments will be able to more efficiently complete and publish ticket repair requests with ease',
 			stack: 'Javascript, NodeJS, Express, Socket.io, ReactJS, MySQL, MUI',
@@ -23,7 +25,7 @@ function ProjectsBody(props) {
 		{
 			id: 2,
 			title: 'Nuke Chat',
-			imgSource: netNukePic,
+			imgSource: nukeChatPic,
 			git: 'https://github.com/felipeGarciaDiaz/nukeChat',
 			link: 'http://felipedev.us:68/',
 			desc: 'Nuke Chat is a chat room that lets you create a secure private room to communicate with 1 or more people. what makes this chat unique is the nuke button, allowing anyone in the chat to destroy all traces of the messages instantly',
@@ -41,7 +43,7 @@ function ProjectsBody(props) {
 		{
 			id: 4,
 			title: 'Net Nuke',
-			imgSource: nukeChatPic,
+			imgSource: netNukePic,
 			git: 'https://github.com/felipeGarciaDiaz/netNuke',
 			link: '/404',
 			desc: 'Net Nuke is a program that takes advantage of a WPA2 vulnerability in routers, allowing a user to remotely connect to a raspberry pi, and shut down a network without even being on that network using a deauth attack',
@@ -75,10 +77,18 @@ function ProjectsBody(props) {
 			stack: 'Javascript, Phaser3, NodeJS, Express, MongoDB',
 		},
 	];
-
+	let addProjectGroup = () => {
+		setProjectRange((val) => val + 3);
+	};
+	useEffect(() => {
+		if (projectRange > projectsList.length - 1) {
+			setDisabled(true);
+		}
+	}, [projectRange, setDisabled, projectsList.length]);
+	//let projectWebTix = projectList[1];
 	return (
 		<React.Fragment>
-			{projectsList.map((projects) => (
+			{projectsList.slice(0, projectRange + 2).map((projects) => (
 				<ProjectsDesc
 					title={projects.title}
 					pic={projects.imgSource}
@@ -88,6 +98,16 @@ function ProjectsBody(props) {
 					stack={projects.stack}
 				/>
 			))}
+			<p className="center-align">
+				<button
+					id="expand-projects-list"
+					className="btn-large"
+					onClick={addProjectGroup}
+					disabled={isDisabled}
+				>
+					See More!
+				</button>
+			</p>
 		</React.Fragment>
 	);
 }

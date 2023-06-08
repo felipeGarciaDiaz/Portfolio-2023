@@ -44,6 +44,33 @@
 		padding-top: 10%;
 		height: 100%;
 	}
+
+	#project-description-body {
+		margin-top: 10%;
+	}
+	#project-showcase-body {
+		margin-top: 10%;
+	}
+	#project-link-github {
+		background-color: #ffffff;
+		color: #111111;
+		margin-bottom: 5%;
+		width: 100%;
+	}
+	#project-link-main {
+		background-color: #ffcc48;
+		color: #111111;
+		margin-bottom: 5%;
+		width: 100%;
+	}
+
+	#expand-projects-list {
+		background-color: #ffcc48;
+		color: #1d1d1d;
+		width: 85%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
 	#disclaimer-info {
 		font-size: 2vw;
 	}
@@ -58,8 +85,7 @@
 		padding: 0%;
 	}
 	#project-image {
-		height: 5%;
-		width: 5%;
+		margin-top: 50%;
 	}
 	#tech-worked {
 		font-size: 6vw;
@@ -71,7 +97,6 @@
 		border: none;
 		line-height: 10%;
 		padding: 0% 1%;
-		border-radius: 8px;
 	}
 }
 body {
@@ -256,6 +281,7 @@ body {
 
 #project-description-body {
 	background-color: #2868a4;
+	border-radius: 10px;
 }
 #project-title {
 	color: #ffcc48;
@@ -268,9 +294,33 @@ body {
 	padding-left: 2%;
 	padding-bottom: 5%;
 }
+@media (min-width: 601px) {
+	#project-link-github {
+		background-color: #ffffff;
+		color: #111111;
+		margin-bottom: 5%;
+		width: 20%;
+	}
+	#project-link-main {
+		background-color: #ffcc48;
+		color: #111111;
+		margin-bottom: 5%;
+		width: 20%;
+	}
+
+	#expand-projects-list {
+		background-color: #ffcc48;
+		color: #1d1d1d;
+		width: 25%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+}
 #project-showcase-body {
 	background-color: #fffaf4;
 	display: inline;
+	border-radius: 10px;
+	box-shadow: #f0d3b2 5px 5px;
 }
 #project-img {
 	height: 50%;
@@ -280,28 +330,26 @@ body {
 	border-radius: 15px;
 }
 #tech-worked {
+	font-family: 'Raleway', sans-serif;
+
 	color: #1d1d1d;
 }
-.arrow-contact {
-	margin-top: 2%;
-	border: solid #4d4d4d;
-	border-width: 0 6px 6px 0;
-	display: inline-block;
-	padding: 60px;
-	transition: 0.25s ease-in-out;
-	margin-bottom: 2%;
-}
+
 #contact-form {
-	background-color: #324d9e;
+	background-color: #42618f;
 	font-family: 'Raleway', sans-serif;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	border-radius: 15px;
 }
 #contact-title {
+	font-weight: bolder;
 	color: #ffffff;
 	margin-top: 3%;
 	margin-bottom: 3%;
+}
+#contact-title-section {
+	color: #ffc600;
 }
 
 #email-form,
@@ -311,37 +359,37 @@ body {
 	border: none;
 	line-height: 10%;
 	padding: 1% 1%;
-	border-radius: 8px;
 }
 #name-form {
 	width: 100%;
-	margin-bottom: 1%;
+	margin-bottom: 1.9%;
 }
-#email-form,
-#phone-form {
+#email-form {
 	width: 50%;
+}
+#phone-form {
+	margin-left: 1.9%;
+	width: 48.1%;
 }
 #email-form:focus,
 #phone-form:focus,
 #name-form,
 #message-form {
-	outline-color: #6db9ff;
+	outline-color: #f0d3b2;
 }
 #message-form {
 	background-color: #ffffff;
 	color: #202020;
-	margin-top: 2%;
 	height: auto;
-	border-radius: 15px;
 	resize: none;
 	padding-left: 2%;
 	margin-bottom: 2%;
 }
 #submit-form {
 	margin-top: 3%;
-	border-radius: 10px;
+	border-radius: 5px;
 	background-color: #ffc600;
-	color: #242424;
+	color: #1d1d1d;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bolder;
 	text-align: center;
@@ -350,6 +398,9 @@ body {
 	box-sizing: content-box;
 	border: none;
 	margin-bottom: 5%;
+}
+#submit-form:hover {
+	cursor: pointer;
 }
 #sent-title {
 	color: #ffffff;

@@ -109,15 +109,6 @@ function Main(props) {
 								))}
 							</div>
 						</div>
-
-						<h4
-							className="center-align"
-							style={{ color: '#FFC95D' }}
-						>
-							Site is currently under maitnance, projects section
-							is under heavy development and there may be some UI
-							bugs
-						</h4>
 					</div>
 
 					<p className="center-align">
