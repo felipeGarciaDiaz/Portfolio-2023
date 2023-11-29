@@ -8,7 +8,7 @@ import nukeChatPic from './media/resources/NUKECHATAPP.png';
 import cardSitePic from './media/resources/CARDSITEAPP.png';
 import regexFormsPic from './media/resources/REGEXFORMSAPP.png';
 import dubleTrublePic from './media/resources/DUBLETRUBLEAPP.png';
-
+//import fiveBallLotto from './media/resources/fiveBallLottoGame.png';
 function ProjectsBody(props) {
 	const [projectRange, setProjectRange] = useState(1);
 	const [isDisabled, setDisabled] = useState(false);
@@ -76,6 +76,24 @@ function ProjectsBody(props) {
 			desc: 'iOS game made using phaser3 framework, if you want to try this make sure your on a phone and your phone is sideways, as this app is no longer in the app store for the time being.',
 			stack: 'Javascript, Phaser3, NodeJS, Express, MongoDB',
 		},
+		// {
+		// 	id: 8,
+		// 	title: '5-Ball Lottery',
+		// 	imgSource: fiveBallLotto,
+		// 	git: 'https://github.com/felipeGarciaDiaz/doubleTrouble',
+		// 	link: 'http://felipedev.us:81/',
+		// 	desc: 'iOS game made using phaser3 framework, if you want to try this make sure your on a phone and your phone is sideways, as this app is no longer in the app store for the time being.',
+		// 	stack: 'Javascript, Phaser3, NodeJS, Express, MongoDB',
+		// },
+		// {
+		// 	id: 9,
+		// 	title: 'Duble Truble',
+		// 	imgSource: dubleTrublePic,
+		// 	git: 'https://github.com/felipeGarciaDiaz/doubleTrouble',
+		// 	link: 'http://felipedev.us:81/',
+		// 	desc: 'iOS game made using phaser3 framework, if you want to try this make sure your on a phone and your phone is sideways, as this app is no longer in the app store for the time being.',
+		// 	stack: 'Javascript, Phaser3, NodeJS, Express, MongoDB',
+		// },
 	];
 	let addProjectGroup = () => {
 		setProjectRange((val) => val + 3);

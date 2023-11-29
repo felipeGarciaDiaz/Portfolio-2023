@@ -81,7 +81,7 @@ function ContentBody(props) {
 							<h2 id="libs-title">Libraries</h2>
 							<h5 id="libs-desc">
 								Phaser 3, ChartJS, ExpressJS, Socket.io,
-								Bootstrap, MaterialUI, Tailwind
+								Bootstrap, MaterialUI, Tailwind, SCSS, Rxjs
 							</h5>
 
 							<div

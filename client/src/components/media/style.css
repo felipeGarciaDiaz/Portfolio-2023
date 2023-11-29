@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @media (max-width: 600px) {
+	
+	
 	body {
 		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
 	}
 
 	#header-title {
+		margin: 0;
 		padding-top: 40%;
 		font-size: 10vw;
 	}
@@ -26,12 +31,22 @@
 
 	#socials {
 		padding-top: 5%;
+		font-size: 3.5vw;
+
+	}
+	#social-row, a {
+		font-size: 500px;
 	}
 	#content-title {
 		font-size: 10vw;
+		padding-left: 5%;
 	}
-	#libs-title,
+	#libs-title {
+		padding-left:5%;
+		font-size: 12vw;
+	}
 	#tools-title {
+		padding-right:5%;
 		font-size: 12vw;
 	}
 	#content-desc,
@@ -111,13 +126,16 @@ div {
 	margin: 0;
 	scroll-behavior: smooth;
 }
-
+/*
+#fdf0e0
+*/
 body {
-	background-color: #fdf0e0;
+	background-color: #ffefdb;
 	overflow-x: hidden;
 }
 
 #header-title {
+	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 5vw;
 	padding-top: 12%;
@@ -168,6 +186,7 @@ body {
 	color: #19213d;
 	font-weight: bolder;
 	text-align: center;
+	font-size: 1vw;
 	margin: auto;
 	padding: 1% 3% 1% 3%;
 	box-sizing: content-box;
@@ -212,7 +231,7 @@ body {
 	color: #ffffff;
 	font-family: 'Raleway', sans-serif;
 	box-shadow: 5px 5px #e6e6e6;
-	border-radius: 10px;
+    border-radius: 75px 0px 75px 25px;
 	margin-bottom: 5%;
 }
 
@@ -228,8 +247,11 @@ body {
 	padding-top: 2%;
 	color: #ffcc48;
 	font-weight: bolder;
+	margin-left: 5%;
 }
-
+#tools-title {
+	margin-right: 5%;
+}
 #content-desc,
 #libs-desc,
 #tools-desc {

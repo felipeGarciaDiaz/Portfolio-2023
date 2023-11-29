@@ -5,6 +5,7 @@ import ProjectsBody from './ProjectParent';
 import ContentBody from './ContentBody';
 import Contact from './Contact';
 import Footer from './utils/Footer';
+import { AnimationPref } from './utils/AnimationPref';
 function Main(props) {
 	//init hooks
 
@@ -77,64 +78,66 @@ function Main(props) {
 	}, [opacitySet, tagline, buttonOpacity, climber]);
 
 	return (
-		<React.Fragment>
-			<Helmet>
-				<title>Felipe GD</title>
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1.0"
-				/>
-			</Helmet>
-			<div clasName="row">
-				<div id="header" className="col s12 spacer layer1">
-					<h1 id="header-title" className="center-align">
-						{intro.current.substring(0, climber)}
-					</h1>
-					<h4 id="desc" className="center-align">
-						{tagline.current.substring(0, climber)}
-					</h4>
-					<div className="container" id="social-row">
-						<div className="row">
-							<div
-								id="socials social-row"
-								className="center-align"
-							>
-								{socialMedia.map((socials) => (
-									<Socials
-										getOpacity={opacitySet}
-										getVisibility={displayIcon.current}
-										link={socials.link}
-										icon={socials.icon}
-									/>
-								))}
+		<AnimationPref>
+			<React.Fragment>
+				<Helmet>
+					<title>Felipe GD</title>
+					<meta
+						name="viewport"
+						content="width=device-width, initial-scale=1.0"
+					/>
+				</Helmet>
+				<div clasName="row">
+					<div id="header" className="col s12 spacer layer1">
+						<h1 id="header-title" className="center-align">
+							{intro.current.substring(0, climber)}
+						</h1>
+						<h4 id="desc" className="center-align">
+							{tagline.current.substring(0, climber)}
+						</h4>
+						<div className="container" id="social-row">
+							<div className="row">
+								<div
+									id="socials social-row"
+									className="center-align"
+								>
+									{socialMedia.map((socials) => (
+										<Socials
+											getOpacity={opacitySet}
+											getVisibility={displayIcon.current}
+											link={socials.link}
+											icon={socials.icon}
+										/>
+									))}
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<p className="center-align">
-						<a
-							id="header-button"
-							className="btn center-align"
-							style={{
-								opacity: buttonOpacity,
-								visibility: displayIcon.current,
-							}}
-							href="#about"
-						>
-							Lets Explore!
-						</a>
-					</p>
+						<p className="center-align">
+							<a
+								id="header-button"
+								className="btn center-align"
+								style={{
+									opacity: buttonOpacity,
+									visibility: displayIcon.current,
+								}}
+								href="#about"
+							>
+								Lets Explore!
+							</a>
+						</p>
+					</div>
+					<ContentBody />
+					<div id="projects">
+						<ProjectsBody />
+					</div>
+					<div id="contact">
+						<Contact />
+					</div>
+					<Footer />
 				</div>
-				<ContentBody />
-				<div id="projects">
-					<ProjectsBody />
-				</div>
-				<div id="contact">
-					<Contact />
-				</div>
-				<Footer />
-			</div>
-		</React.Fragment>
+			</React.Fragment>
+		</AnimationPref>
 	);
 }
 

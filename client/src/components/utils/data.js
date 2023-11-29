@@ -39,5 +39,24 @@ export const SkillData = [
         skill: 'MySQL', 
         skillMastered: 95, 
     },
-
+    {
+        id: 9, 
+        skill: 'Angular', 
+        skillMastered: 85, 
+    },    
+    {
+        id: 10, 
+        skill: 'Flutter', 
+        skillMastered: 85, 
+    },    
+    {
+        id: 11, 
+        skill: 'NextJS', 
+        skillMastered: 95, 
+    },    
+    {
+        id: 12, 
+        skill: 'MongoDB', 
+        skillMastered: 90, 
+    },
 ];
